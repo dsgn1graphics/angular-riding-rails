@@ -12,6 +12,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+.DS_Store
 
 # Ignore Byebug command history file.
 .byebug_history
@@ -27,3 +28,9 @@ typings/
 .ruby-gemset
 .ruby-gemset*
 .ruby-version*
+
+# Tour Of Hero stuff not needed
+/app/tour_of_heroes/
+/config/javascripts/webpack.demo.build.js
+/config/javascripts/webpack.demo.js
+

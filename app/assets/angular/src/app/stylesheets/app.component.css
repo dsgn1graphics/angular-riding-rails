@@ -6,3 +6,15 @@ main {
   display: block;
 }
 
+img.logo {
+  height: 250px;
+  width: 250px;
+}
+
+img.logo.rails {
+  height: 200px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 30px;
+  vertical-align: top;
+}
