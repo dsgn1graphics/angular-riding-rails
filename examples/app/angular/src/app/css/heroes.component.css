@@ -45,3 +45,18 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+.heroes .del {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #ff0000;
+  line-height: 1em;
+  position: relative;
+  right: 0px;
+  float: right;
+  top: -4px;
+  height: 1.8em;
+  margin-right: 0em;
+  border-radius: 0 4px 4px 0;
+}

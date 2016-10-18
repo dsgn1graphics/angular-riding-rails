@@ -4,7 +4,6 @@ import { HeroService } from '../services/hero.service';
 import { Router } from '@angular/router';
 
 @Component ({
-  // moduleId: module.id,
   selector: 'my-dashboard',
   templateUrl: '../templates/dashboard.component.html',
   styleUrls: [ '../css/dashboard.component.css' ]
@@ -12,11 +11,19 @@ import { Router } from '@angular/router';
 
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
+  errorMessage: string;
 
   constructor(private router: Router, private heroService: HeroService) {}
+  
+  getHeroes(): void {
+    this.heroService.getHeroes()
+      .subscribe(
+        response => this.heroes = response,
+        error => this.errorMessage = <any>error);
+  }
 
   ngOnInit(): void {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(1, 5));
+    this.getHeroes()
   }
 
   gotoDetail(hero: Hero): void {
