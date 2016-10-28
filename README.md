@@ -51,7 +51,7 @@ View the app at http://localhost:3000
 
 #### Setup Gotchas
 
-If you use the [Postgres App](http://postgresapp.com/) like me you may get an pg gem install error. Have know fear, this is common. You just need to tell bundler where to find the `pg_config` file. Use the following command and you should be ok. Make sure you update the version numbers accordingly.
+If you use the [Postgres App](http://postgresapp.com/) like me you may get an pg gem install error. Have no fear, this is common. You just need to tell bundler where to find the `pg_config` file. Use the following command and you should be ok. Make sure you update the version numbers accordingly.
   
 ```
 gem install pg -v '0.18.4' -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.6/bin/pg_config
